@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>thisisawebsitedotcom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="stage">
+    <div class="tv">
+      <div class="tv-screen" id="screen">
+        <div class="static-noise"></div>
+        <div class="screen-content" id="screenContent">
+          <p class="prompt">type a code</p>
+        </div>
+      </div>
+      <div class="tv-speaker"></div>
+      <div class="tv-knob"></div>
+    </div>
+
+    <form id="codeForm" class="code-form" autocomplete="off">
+      <input id="codeInput" type="text" placeholder="enter code" maxlength="200" />
+      <button type="submit">go</button>
+    </form>
+
+    <p id="message" class="message"></p>
+
+    <section id="adminPanel" class="admin-panel hidden">
+      <h2>admin</h2>
+      <form id="newCodeForm" class="admin-form">
+        <input id="newCode" type="text" placeholder="code" />
+        <input id="newContent" type="text" placeholder="content to show" />
+        <button type="submit">create</button>
+      </form>
+      <ul id="codeList" class="code-list"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
